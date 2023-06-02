@@ -88,10 +88,10 @@ and
 
 Note - The first test output will look a bit different as it will also grep the microshell in the .c and .h files, it will look like this:
 
+```
 microshell
-
 microshell.c
-
 microshell.h
 
 i love my microshell
+```
