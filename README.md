@@ -77,7 +77,7 @@ Practice the exam just like you would in the real exam - https://github.com/JClu
 Testing the program works
 1) cd into the microshell directory
 2) type this into the terminal: gcc microshell.c -o microshell
-3) type or copy & paste the two examples and check that the output is the same 
+3) type or copy & paste each of the two examples into the terminal and check that the output is the same as the example 
 i.e. 
 ./microshell /bin/ls "|" /usr/bin/grep microshell ";" /bin/echo i love my microshell
 
