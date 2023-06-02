@@ -74,7 +74,8 @@ $>
 Practice the exam just like you would in the real exam - https://github.com/JCluzet/42_EXAM
 
 ---------------------------------------------
-Testing the program works
+
+## Testing the program works in command line
 1) cd into the microshell directory
 2) type this into the terminal: gcc microshell.c -o microshell
 3) type or copy & paste each of the two examples into the terminal and check that the output is the same as the example 
