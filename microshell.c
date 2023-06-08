@@ -19,7 +19,7 @@ int cd(char **argv, int i)
 int exec(char **argv, char **envp, int i) 
 {
     int fd[2];
-    int    status;
+    int status;
     int has_pipe = argv[i] && !strcmp(argv[i], "|");
 
     if (has_pipe && pipe(fd) == -1)
@@ -38,7 +38,6 @@ int exec(char **argv, char **envp, int i)
     waitpid(pid, &status, 0);
     if (has_pipe && (dup2(fd[0], 0) == -1 || close(fd[0]) == -1 || close(fd[1]) == -1))
         return err("error: fatal\n");
-
     return WIFEXITED(status) && WEXITSTATUS(status);
 }
 
