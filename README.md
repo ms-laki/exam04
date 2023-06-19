@@ -79,19 +79,30 @@ Practice the exam just like you would in the real exam - https://github.com/JClu
 1) cd into the microshell directory
 2) type this into the terminal: gcc microshell.c -o microshell
 3) type or copy & paste each of the two examples into the terminal and check that the output is the same as the example 
-i.e. 
+
+## Testing Input and Output
+
+### Input Test 1:
+```
 ./microshell /bin/ls "|" /usr/bin/grep microshell ";" /bin/echo i love my microshell
-
-and
-
-./microshell /bin/echo WOOT ";/bin/echo NOPE;" "; ;" ";" /bin/echo YEAH ;
-
+```
 Note - The first test output will look a bit different as it will also grep the microshell in the .c and .h files, it will look like this:
 
+### Output Test 1:
 ```
 microshell
 microshell.c
 microshell.h
-
 i love my microshell
+```
+
+### Input Test 2:
+```
+./microshell /bin/echo WOOT ";/bin/echo NOPE;" "; ;" ";" /bin/echo YEAH ;
+```
+
+### Output Test 2:
+```
+WOOT ;/bin/echo NOPE; ; ;
+YEAH
 ```
